@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>doc</title>
+	 <!-- jquery cdn -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jquery cdn -->
+
+
+  <!-- animation cdn start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- animation cdn -->
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+
+      <div class="col-lg-5 border border-1 m-auto " id="card-one">
+
+        <img class="img siximg" src="media/m e200.jpg" style="width:100%;">
+
+        <div class="e200about">
+          <h2><u>Mercedes E200</u></h2>
+          <p><b>ARAI Mileage (Certified) 12.06 kmpl<br>
+              Top Speed 240 KMPH<br>
+              Engine cc (Displacement) 1991 cc<br>
+              Number of Gears 9-Speed Automatic Gearbox<br>
+              Maximum Power 184 HP @ 5500 rpm<br>
+              Maximum Torque 300 NM @ 1200 rpm</b></p>
+        </div>
+      </div>
+
+      <div class="col-lg-5 border border-1 m-auto " id="card-two">
+        <img class="img siximg" src="media/m s650.webp" style="width:100%;">
+        <div class="e200about">
+          <h2><u>Mercedes Maybach S-650</u></h2>
+          <p><b>ARAI Mileage (Certified) 7.06 kmpl<br>
+              Top Speed 340 KMPH<br>
+              Engine- V12 <br>
+              Number of Gears 7-Speed Automatic Gearbox<br>
+              Maximum Power 621BHP @ 5500 rpm<br>
+              Maximum Torque 738NM @ 2300 rpm</b></p>
+        </div>
+      </div>
+
+
+      <div class="col-lg-5 border border-1 m-auto mt-5 " id="card-one">
+        <img class="img siximg" src="media/m a200.webp" style="width:100%;">
+        <div class="e200about">
+          <h2><u>Mercedes A200</u></h2>
+          <p><b>ARAI Mileage (Certified) 13.06 kmpl<br>
+              Top Speed 240 KMPH<br>
+              Engine cc (Displacement) 2143 cc<br>
+              Number of Gears 6-Speed Automatic Gearbox<br>
+              Maximum Power 184 HP @ 3600 rpm<br>
+              Maximum Torque 300 NM @ 1600 rpm</b></p>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-lg-5 border border-1 m-auto mt-5 " id="card-two">
+        <img class="img siximg" src="media/m g63.webp" style="width:100%;">
+        <div class="e200about">
+          <h2><u>Mercedes M G63</u></h2>
+          <p><b>ARAI Mileage (Certified) 5.6 kmpl<br>
+              Top Speed 210 KMPH<br>
+              Engine cc (Displacement) 5461 cc<br>
+              Number of Gears 7-Speed Automatic Gearbox<br>
+              Maximum Power 563 HP @ 5500 rpm<br>
+              Maximum Torque 300 NM @ 2000 rpm</b></p>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-lg-5 border border-1 m-auto mt-5 " id="card-one">
+        <img class="img siximg" src="media/amg gt4.jpg" style="width:100%;">
+        <div class="e200about">
+          <h2><u>Mercedes AMG GT4 4 Door</u></h2>
+          <p><b>ARAI Mileage (Certified) City 19.06 Highway 25+ kmpl<br>
+              Top Speed (0to60 4.8 second) 240 KMPH<br>
+              Engine cc (Displacement)Inline-6 V8 Turbo 1991 cc<br>
+              Number of Gears TCT 9-Speed Automatic Gearbox<br>
+              Maximum Power 362 BHP @ 5500 rpm<br>
+              Maximum Torque 300 NM @ 6100 rpm</b></p>
+        </div>
+      </div>
+
+
+      <div class="col-lg-5 border border-1 m-auto mt-5 " id="card-two">
+        <img class="img siximg" src="media/slk 250.webp" style="width:100%;">
+        <div class="e200about">
+          <h2><u>Mercedes AMG SL43</u></h2>
+          <p><b>ARAI Mileage (Certified) 12.06 kmpl<br>
+              Top Speed 310 KMPH<br>
+              Engine cc (Displacement) 1991 cc<br>
+              Number of Gears 9-Speed Automatic Gearbox<br>
+              Maximum Power 184 HP @ 5500 rpm<br>
+              Maximum Torque 300 NM @ 1200 rpm<br>
+              Break system- dual channel abs<br>
+              Number of seating capacity- 2 seating capacity<br></b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+	 $(document).ready(function () {
+      $(window).scroll(function () {
+        var positiontop = $(document).scrollTop();
+        console.log(positiontop);
+
+
+        if ((positiontop > 10) && (positiontop < 2004)) {
+          $('#card-one').addClass('animate__animated animate__backInLeft');
+          $('#card-two').addClass('animate__animated animate__bounceInRight');
+        }
+      })
+    })
+</script>
+</body>
+</html>
